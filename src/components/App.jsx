@@ -3,7 +3,8 @@ import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import PostDetail from './PostDetail/PostDetail';
 import './App.css';
 import MainPage from './MainPage';
-
+//Used useEffect to fetch data from the API and forward the data as props into MainPage.
+//Used react-router-dom to ease the routing process from page to page.
 function App() {
   const [posts, setPosts] = useState([]);
   const [filteredPosts, setFilteredPosts] = useState([]);

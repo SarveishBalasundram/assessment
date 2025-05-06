@@ -2,7 +2,7 @@ import PostList from './PostList/PostList';
 import CategoryFilter from './CategoryFilter/CategoryFilter';
 import Pagination from './Pagination/Pagination';
 import { useSearchParams } from 'react-router-dom';
-
+//This component acts as the main bridge for other components to be worked on.
 function MainPage({
   posts,
   filteredPosts,
@@ -15,6 +15,7 @@ function MainPage({
 }) {
   const [searchParams, setSearchParams] = useSearchParams();
 
+  //This handles the real-time filter change of the post according to selected categories.
   const handleFilterChange = (selectedCategories) => {
     if (selectedCategories.length === 0) {
       setFilteredPosts(posts);
@@ -30,6 +31,7 @@ function MainPage({
     setCurrentPage(1);
   };
 
+  //Used for pagination purposes, and dividing the posts according to the number of pages generated.
   const lastPostNo = currentPage * postsPerPage;
   const firstPageNo = lastPostNo - postsPerPage;
   const currentPosts = Array.isArray(filteredPosts)

@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import './PostList.css';
 
+//Used to show the List of posts in a list format to the user.
 function PostList({ posts }) {
   if (posts.length === 0) {
     return (

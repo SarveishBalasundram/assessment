@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import './CategoryFilter.css';
 
+// Used as a filter where user can select more than one category as a filter for posts.
 function CategoryFilter({ categories, onFilterChange, searchParams }) {
   const [selectedCategories, setSelectedCategories] = useState([]);
 

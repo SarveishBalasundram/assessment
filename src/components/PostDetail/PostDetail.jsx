@@ -1,6 +1,7 @@
 import { useParams, Link } from 'react-router-dom';
 import './PostDetail.css';
 
+//Used to show the detailed individual post information based on id selected.
 function PostDetail({ posts }) {
   const { id } = useParams();
   const post = posts.find((p) => p.id === parseInt(id) || p.id === id);

@@ -1,5 +1,6 @@
 import './Pagination.css';
 
+//Used as pagination buttons where each button refers to specific page.
 function Pagination({ postsPerPage, totalPosts, paginate, currentPage }) {
   const pageNumbers = [];
 
