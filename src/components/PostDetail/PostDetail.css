@@ -1,0 +1,139 @@
+.post-detail-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+  background: var(--light-gray); 
+}
+
+.back-link {
+  display: inline-block;
+  color: var(--primary-blue);
+  font-weight: 500;
+  margin-bottom: 2rem;
+  transition: color 0.3s;
+}
+
+.back-link:hover {
+  color: var(--dark-blue);
+  text-decoration: underline;
+}
+
+.post-detail {
+  background: var(--blue);
+  color: var(--black); 
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.post-header {
+  margin-bottom: 2rem;
+  background-color: white !important;
+}
+
+.post-category {
+  display: inline-block;
+  background-color: var(--dark-blue);
+  color: var(--white);
+  padding: 0.5rem 1rem;
+  border-radius: 25px;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.post-title {
+  color: var(--white);
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+.post-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--light-gray); 
+  font-size: 0.95rem;
+}
+
+.author-info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.author-avatar {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+
+.author-name {
+  font-weight: 500;
+}
+
+.post-date {
+  font-weight: 400;
+}
+
+.post-content {
+  line-height: 1.8;
+  font-size: 1rem;
+  color: var(--black);
+}
+
+.post-content p {
+  margin-bottom: 1.5rem;
+}
+
+.post-notFound {
+  text-align: center;
+  padding: 3rem;
+  background: var(--white);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.post-notFound h2 {
+  color: var(--dark-blue);
+  margin-bottom: 1rem;
+}
+
+.post-notFound a {
+  color: var(--primary-blue);
+  text-decoration: none;
+}
+
+.post-notFound a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .post-image img {
+    max-height: 350px;
+  }
+
+  .post-main {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .post-detail-container {
+    padding: 1rem;
+  }
+
+  .post-title {
+    font-size: 1.8rem;
+  }
+
+  .post-content {
+    font-size: 0.95rem;
+  }
+
+  .post-image img {
+    max-height: 250px;
+  }
+}
